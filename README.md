@@ -10,6 +10,7 @@ A comprehensive sales data analysis system that uses **SQL** for data storage, *
 - **Trend Analysis**: Monthly sales trends and patterns
 - **Product Analysis**: Best-selling products by revenue and quantity
 - **Visualizations**: Beautiful charts and graphs for data insights
+- **Interactive Dashboard**: Streamlit web dashboard with real-time filtering and exploration
 
 ## 📊 What the Project Does
 
@@ -26,6 +27,11 @@ A comprehensive sales data analysis system that uses **SQL** for data storage, *
    - Top products by revenue
    - Sales distribution analysis
    - Quantity vs revenue comparison
+5. **Interactive Web Dashboard**:
+   - Real-time data filtering by date and product
+   - Interactive charts with Plotly
+   - KPI metrics display
+   - Data export capabilities
 
 ## 🗄️ Database Structure
 
@@ -54,7 +60,22 @@ CREATE TABLE sales (
 
 ## 💻 Usage
 
-### Option 1: Run Complete Analysis (Recommended)
+### Option 1: Interactive Dashboard (Recommended) 🌟
+
+Launch the Streamlit web dashboard for interactive data exploration:
+
+```bash
+streamlit run dashboard.py
+```
+
+This will open a web browser with an interactive dashboard featuring:
+- 📊 Real-time KPI metrics
+- 📈 Interactive charts and visualizations
+- 🔍 Date range and product filtering
+- 💾 Data export capabilities
+- 📱 Responsive design
+
+### Option 2: Run Complete Analysis
 
 Run the main script to execute the full analysis pipeline:
 
@@ -68,7 +89,7 @@ This will:
 - Run comprehensive analysis
 - Generate all visualizations
 
-### Option 2: Run Individual Components
+### Option 3: Run Individual Components
 
 **Initialize Database Only**:
 ```bash
@@ -93,6 +114,7 @@ sales-data-analysis/
 ├── init_database.py        # Database initialization script
 ├── sales_analysis.py       # Main analysis module (Pandas + NumPy)
 ├── visualizations.py       # Visualization module (Matplotlib)
+├── dashboard.py            # Streamlit interactive dashboard
 ├── main.py                 # Main entry point
 ├── requirements.txt        # Python dependencies
 ├── README.md              # This file
@@ -121,7 +143,9 @@ The system generates:
 - **SQLite** - Database storage
 - **Pandas** - Data manipulation and analysis
 - **NumPy** - Numerical calculations and statistics
-- **Matplotlib** - Data visualization
+- **Matplotlib** - Static data visualization
+- **Streamlit** - Interactive web dashboard
+- **Plotly** - Interactive charts and graphs
 
 ## 📊 Key Metrics Calculated
 
