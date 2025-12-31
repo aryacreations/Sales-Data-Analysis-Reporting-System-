@@ -2,7 +2,7 @@
 
 A comprehensive sales data analysis system that uses **SQL** for data storage, **Pandas** for data manipulation, and **NumPy** for statistical calculations and revenue analysis.
 
-## 🎯 Features
+## Features
 
 - **SQL Database**: SQLite database for storing sales records
 - **Data Analysis**: Comprehensive analysis using Pandas and NumPy
